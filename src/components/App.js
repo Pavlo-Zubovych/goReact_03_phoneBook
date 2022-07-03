@@ -1,19 +1,39 @@
-import React from "react";
-import { Component } from "react";
-import { nanoid } from "nanoid";
-import styles from "./App.module.css";
+import React from 'react';
+import { Component } from 'react';
+import { nanoid } from 'nanoid';
+import styles from './App.module.css';
 
-import Container from "./Container";
-import ContactForm from "./ContactForm";
-import ContactList from "./ContactList";
-import contacts from "./contacts.json";
-import Filter from "./Filter";
+import Container from './Container';
+import ContactForm from './ContactForm';
+import ContactList from './ContactList';
+import contacts from './contacts.json';
+import Filter from './Filter';
 
 class App extends Component {
   state = {
     contacts,
-    filter: "",
+    filter: '',
   };
+
+  //
+  componentDidMount() {
+    const contacts = localStorage.getItem('contacts');
+    const parcedContacts = JSON.parse(contacts);
+
+    if (parcedContacts) {
+      this.setState({ contacts: parcedContacts });
+    }
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    const nextContacts = this.state.contacts;
+    const prevContacts = prevState.contacts;
+
+    if (nextContacts !== prevContacts) {
+      localStorage.setItem('contacts', JSON.stringify(nextContacts));
+    }
+  }
+  //
 
   addContacts = ({ name, number }) => {
     const contact = {
