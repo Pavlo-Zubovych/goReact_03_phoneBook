@@ -23,9 +23,12 @@ class App extends Component {
     if (parcedContacts) {
       this.setState({ contacts: parcedContacts });
     }
+
+    console.log('App componentDidMount');
   }
 
   componentDidUpdate(prevProps, prevState) {
+    console.log('App componentDidUpdate');
     const nextContacts = this.state.contacts;
     const prevContacts = prevState.contacts;
 
