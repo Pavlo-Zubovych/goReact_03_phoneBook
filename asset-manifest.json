@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/goReact_03_phoneBook/static/css/main.c7d54531.css",
+    "main.js": "/goReact_03_phoneBook/static/js/main.32af886a.js",
+    "index.html": "/goReact_03_phoneBook/index.html",
+    "main.c7d54531.css.map": "/goReact_03_phoneBook/static/css/main.c7d54531.css.map",
+    "main.32af886a.js.map": "/goReact_03_phoneBook/static/js/main.32af886a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c7d54531.css",
+    "static/js/main.32af886a.js"
+  ]
+}
