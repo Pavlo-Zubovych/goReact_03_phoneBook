@@ -1,6 +1,6 @@
-** Телефонна книга **
+## Телефонна книга **
 
-# Контакти зберігаються в localStorege
+#### Контакти зберігаються в localStorege
 
-Ось ссилка на [живу сторінку](https://github.com/facebook/create-react-app).
+Ось ссилка на [живу сторінку](pavlo-zubovych.github.io/goReact_03_phoneBook/).
 
