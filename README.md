@@ -4,4 +4,3 @@
 - Реалізований фільте контактів
 
 Ось ссилка на [живу сторінку](https://pavlo-zubovych.github.io/goReact_03_phoneBook/).
-
